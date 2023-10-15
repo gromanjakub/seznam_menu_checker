@@ -1,0 +1,11 @@
+
+beautifulsoup4==4.8.2
+
+bs4==0.0.1
+
+pandas==2.0.1
+
+requests==2.31.0
+
+streamlit==1.27.2
+
