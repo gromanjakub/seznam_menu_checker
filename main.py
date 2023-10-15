@@ -87,6 +87,8 @@ def main():
 
     st.write("Formanka:")
     st.dataframe(formanka_df)
+    
+    time.sleep(21600)
 
 
 if __name__ == '__main__':
