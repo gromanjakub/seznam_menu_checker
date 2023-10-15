@@ -3,6 +3,7 @@ import streamlit as st
 import requests
 from bs4 import BeautifulSoup
 import time
+from datetime import datetime as date
 
 def get_tajmahal():
     tj_menu = {
@@ -68,7 +69,8 @@ def get_formanka():
     return formanka_df
 
 def main():
-    st.title('Menu kolem Seznamu')
+    daytoday = date.today().strftime("%A")
+    st.title(f'Menu kolem Seznamu - {daytoday}')
 
     # Run your custom function to process data
     tj_df = get_tajmahal()
@@ -88,7 +90,7 @@ def main():
     st.write("Formanka:")
     st.dataframe(formanka_df)
     
-    time.sleep(21600)
+    #time.sleep(21600)
 
 
 if __name__ == '__main__':
